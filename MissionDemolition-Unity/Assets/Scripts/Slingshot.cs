@@ -2,10 +2,10 @@
  * Created by: Haley Kelly
  * Date Created: 2/9/2022
  *
- * Last Edited by: N/A
- * Last Edited: 2/9/2022
+ * Last Edited by: Haley Kelly
+ * Last Edited: 2/14/2022
  *
- * Description:
+ * Description: Slingshot script.
  */
 
 
@@ -67,7 +67,7 @@ public class Slingshot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -100,7 +100,11 @@ public class Slingshot : MonoBehaviour
         {
             aimingMode = false;
             projectileRB.isKinematic = false;
-            projectileRB.velocity = -mouseDelta * velocityMultiplier;
+            projectileRB.velocity = -mouseDelta * velocityMultiplier; // velocity x mousedelta
+
+            FollowCam.POI = projectile; // set poi for camera
+
+
             projectile = null;  // forget the last instance
         }
     }
