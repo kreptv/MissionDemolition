@@ -1,3 +1,13 @@
+/*
+ * Created by: Haley Kelly
+ * Date Created: 2/15/2022
+ *
+ * Last Edited by: Haley Kelly
+ * Last Edited: 2/16/2022
+ *
+ * Description: Creates clouds.
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
